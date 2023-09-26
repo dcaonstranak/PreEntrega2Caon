@@ -24,7 +24,7 @@ header{
 
 nav {
     flex-grow: 1;
-    margin-right: auto; /* Agrega esta línea */
+    margin-right: auto;
 }
 
 .logoheader{
@@ -35,12 +35,12 @@ nav {
 header ul {
     list-style-type: none;
     display: flex;
-    justify-content: flex-end; /* Cambia a flex-end */
+    justify-content: flex-end;
     align-items: center;
     height: 100%;
     margin: auto;
     padding: 0;
-    margin-right: 30px; /* Puedes ajustar el valor según sea necesario */
+    margin-right: 30px;
 }
 
 header li {
@@ -51,8 +51,8 @@ header li {
  header a {
     text-decoration: none;
     color: var(--principal);
-    font-family: Arial, Helvetica, sans-serif; /* Agrega la familia tipográfica aquí */
-    font-size: 21px; /* Puedes ajustar el tamaño de fuente según tus preferencias */
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 21px; 
     font-weight: bold;
   }
 
@@ -63,7 +63,7 @@ header li {
 .imgbuscador{
     background-size:contain;
     max-width: 100%;
-    height: auto; /* Para mantener la proporción de aspecto original de la imagen */
+    height: auto; 
 }
 .contenedor{
     position: relative;
@@ -88,18 +88,18 @@ footer ul {
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-top: 40px; /* Margen superior */
-    margin-bottom: 40px; /* Margen inferior */
+    margin-top: 40px;
+    margin-bottom: 40px; 
 }
 
 footer li {
-    margin-right: 10px; /* Ajusta el margen entre los elementos según sea necesario */
+    margin-right: 10px;
 }
 
 footer a img {
-    width: 24px; /* Ajusta el tamaño de las imágenes según sea necesario */
-    margin-top: 10px; /* Margen superior */
-    margin-bottom: 10px; /* Margen inferior */
+    width: 24px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
 }
 
 footer a img:hover{
@@ -165,7 +165,7 @@ h3{
     margin-top: 2%;
 }
 
-.h2nosotros, .h2prop{
+.h2nosotros, .h2prop, .h2contact{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-style:normal;
@@ -279,13 +279,13 @@ align-self: center;
     position: absolute;
     top: 10px;
     left: 10px;
-    text-align: center; /* Centrar el contenido */
+    text-align: center; 
 }
 
 .boton-container {
-    display: flex; /* Hace que los botones se muestren uno al lado del otro */
-    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
-    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+    display: flex; 
+    justify-content: center; 
+    margin-top: 10px; 
 }
 
 .boton-container a {
@@ -293,35 +293,35 @@ align-self: center;
 }
 
 .boton-container input[type="button"] {
-    font-size: 18px; /* Ajusta el tamaño de fuente del botón según sea necesario */
-    padding: 10px 20px; /* Ajusta el relleno del botón según sea necesario */
+    font-size: 18px; 
+    padding: 10px 20px; 
     background-color: var(--principal);
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    margin: 0 10px; /* Añade un margen entre los botones */
+    margin: 0 10px; 
 }
 
 .boton-container input[type="button"]:hover {
-    background-color:  var(--secundario) ; /* Cambia el color de fondo al pasar el cursor */
+    background-color:  var(--secundario) ; 
 }
 
 .vertical-center {
-    min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra verticalmente el contenido en el eje Y */
-    align-items: center; /* Centra horizontalmente el contenido en el eje X */
+    justify-content: center;
+    align-items: center; 
 }
 
 .texto-encima {
-    text-align: center; /* Centra el contenido horizontalmente */
+    text-align: center; 
 }
 
 .boton-container {
     display: flex;
-    justify-content: center; /* Centra los botones horizontalmente */
+    justify-content: center; 
     margin-top: 10px;
 }
 
@@ -348,7 +348,7 @@ align-self: center;
     border-radius: 6px;
     cursor: pointer;
     margin: 0 10px;
-    padding: 10px 20px; /* Ajusta el espaciado interno del botón */
+    padding: 10px 20px; 
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -366,19 +366,18 @@ align-self: center;
     border-radius: 6px; 
 }
 
-/* Añade este estilo para la sección de tasaciones */
+
 .sectiontasaciones {
     background-color: var(--principal) ;
     border-radius: 12px;
     padding: 20px;
     display: flex;
-    flex-direction: row; /* Coloca los elementos en fila */
-    align-items: center; /* Centra verticalmente los elementos */
-    text-align: center; /* Centra el contenido horizontalmente */
+    flex-direction: row;
+    align-items: center; 
+    text-align: center; 
     justify-content: center;
 }
 
-/* Establece un margen inferior entre los elementos del contenedor principal */
 .content-tasaciones {
     margin-bottom: 20px;
     display: grid;
@@ -386,19 +385,19 @@ align-self: center;
     "p-imagen p-texto";
 }
 
-/* Establece un margen derecho para la imagen */
+
 .imgtasaciones {
     width: 300px;
     border-radius: 6px;
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    margin-right: 20px; 
     grid-area: p-imagen;
 }
 
 .text-container {
-    flex: 1; /* Hace que el texto y el botón ocupen todo el espacio disponible en el contenedor */
+    flex: 1; 
     display: flex;
-    flex-direction: column; /* Coloca los elementos en columna */
-    justify-content: center; /* Centra verticalmente el texto y el botón */
+    flex-direction: column;
+    justify-content: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     grid-area: p-texto;
@@ -406,28 +405,28 @@ align-self: center;
     text-align: left;
 }
 
-/* Establece un margen inferior entre los elementos de texto y el botón */
+
 .h2tasaciones, .ptasaciones, .botonhome {
     margin-bottom: 10px;
 }
 
 
-/* Añade estos estilos para los contenedores de la imagen y el texto en la sección de tasaciones */
+
 .img-container {
-    flex: 1; /* Hace que la imagen ocupe todo el espacio disponible en el contenedor */
+    flex: 1; 
     display: flex;
-    justify-content: center; /* Centra horizontalmente la imagen */
-    align-items: center; /* Centra verticalmente la imagen */
+    justify-content: center; 
+    align-items: center; 
 }
 
 
 
-/* Establece un margen inferior entre los elementos de texto y el botón */
+
 .h2tasaciones, .ptasaciones, .botonhome {
     margin-bottom: 10px;
 }
 
-/* Divide el párrafo en dos renglones */
+
 .ptasaciones {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -436,15 +435,15 @@ align-self: center;
     text-decoration: none;
     text-align: left;
     color: white;
-    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
-    overflow: hidden; /* Oculta el exceso de texto */
-    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 .ptasaciones::after {
-    content: '\A'; /* Agrega un salto de línea */
-    white-space: pre; /* Añade un espacio en blanco */
-    display: block; /* Muestra el contenido en un bloque separado */
+    content: '\A'; 
+    white-space: pre; 
+    display: block; 
 }
 
 .mapaalq{
@@ -454,8 +453,8 @@ align-self: center;
 
 .map-container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
     margin-bottom: 2%;
 }
 
@@ -503,12 +502,12 @@ justify-self: center;
 }
 
 .linea-divisoria {
-    width: 3px; /* Ancho de la línea */
-    background-color: var(--principal); /* Color de la línea (puedes cambiarlo) */
-    position: absolute; /* Posición absoluta para superponerla */
-    left: 50%; /* Colocarla en el centro vertical */
-    top: 50%; /* Inicio desde la parte superior */
-    bottom: 0; /* Termina en la parte inferior */
+    width: 3px; 
+    background-color: var(--principal); /
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    bottom: 0; 
 
     grid-area: p-imagen2;
 }
