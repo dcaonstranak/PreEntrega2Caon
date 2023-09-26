@@ -1,0 +1,518 @@
+:root {
+    --principal: #0877a2;
+    --secundario: #065b8d;
+    --bg-claro: #bfedff;
+    --prop-1: rgb(210, 235, 251);
+    --prop-2: rgb(193, 214, 226);
+}
+
+.navbar{
+    background-color: var(--bg-claro);
+    font-weight: bold;
+}
+
+
+header{
+    background-color:var(--bg-claro) ;
+    background-size: auto;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    margin-right: auto; /* Agrega esta línea */
+}
+
+.logoheader{
+    width: 100px;
+    border-radius: 6px;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end; /* Cambia a flex-end */
+    align-items: center;
+    height: 100%;
+    margin: auto;
+    padding: 0;
+    margin-right: 30px; /* Puedes ajustar el valor según sea necesario */
+}
+
+header li {
+    margin-right: 50px;
+
+  }
+
+ header a {
+    text-decoration: none;
+    color: var(--principal);
+    font-family: Arial, Helvetica, sans-serif; /* Agrega la familia tipográfica aquí */
+    font-size: 21px; /* Puedes ajustar el tamaño de fuente según tus preferencias */
+    font-weight: bold;
+  }
+
+  header li:last-child {
+    margin-right: 0;
+  }
+
+.imgbuscador{
+    background-size:contain;
+    max-width: 100%;
+    height: auto; /* Para mantener la proporción de aspecto original de la imagen */
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width:auto;
+}
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+
+footer{
+    background-color: var(--bg-claro) ;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-top: 40px; /* Margen superior */
+    margin-bottom: 40px; /* Margen inferior */
+}
+
+footer li {
+    margin-right: 10px; /* Ajusta el margen entre los elementos según sea necesario */
+}
+
+footer a img {
+    width: 24px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    margin-top: 10px; /* Margen superior */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
+footer a img:hover{
+    transform: scale(1.15)
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    color: var(--principal);
+    text-align: center;
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    color: var(--principal);
+}
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    color: var(--principal);
+}
+
+
+.h2tasaciones{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    color:white;
+}
+
+.h1header{
+    text-align: center;
+    color: var(--principal);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+.h1nosotros{
+    text-align: left;  
+    color: var(--principal);
+    font-weight: bold;
+}
+
+.h1contacto, .h1prop{
+    color: var(--principal);
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.h2nosotros, .h2prop{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    color: var(--secundario);
+}
+
+.h3nosotros, .h3prop{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style:normal;
+    font-weight:bold;
+    text-decoration:none;
+    color: var(--secundario);
+}
+
+.ulnosotros{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style:normal;
+    text-decoration:none;
+}
+
+.pnosotros{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style:normal;
+    text-decoration:none;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style:normal;
+    font-weight:lighter;
+    text-decoration:none;
+    text-align:start;
+}
+.ptasaciones{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style:italic;
+    font-weight:lighter;
+    text-decoration:none;
+    text-align:start;
+    color: white;
+}
+
+.imgtasaciones{
+    width: 300px;
+    border-radius: 6px;
+}
+
+
+.imgnosotros{
+    width: 600px;
+    grid-area: p-imagen;
+    margin-right: 30px; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.imgpropiedad{
+    width: 400px;
+    border-radius: 6px;
+}
+
+.sectionprop1{
+    background-color: var(--prop-1) ;
+    display: grid;
+    grid-template-areas: 
+    "p-imagen p-texto";
+    margin: 2%;
+    padding: 1%;
+}
+.sectionprop2{
+    background-color:var(--prop-2) ;
+    display: grid;
+    grid-template-areas: 
+    "p-imagen p-texto";
+    margin: 2%;
+    padding: 1%;
+}
+
+.imgpropiedad {
+    grid-area: p-imagen;
+    margin-right: 20px; 
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.divsectionprop{
+    grid-area: p-texto;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    text-align: left;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.imgcontacto, .imgcontacto2{
+    width: 250px;
+    border-radius: 6px;
+align-self: center;
+}
+
+.texto-encima {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-align: center; /* Centrar el contenido */
+}
+
+.boton-container {
+    display: flex; /* Hace que los botones se muestren uno al lado del otro */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+}
+
+.boton-container a {
+    text-decoration: none;
+}
+
+.boton-container input[type="button"] {
+    font-size: 18px; /* Ajusta el tamaño de fuente del botón según sea necesario */
+    padding: 10px 20px; /* Ajusta el relleno del botón según sea necesario */
+    background-color: var(--principal);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 10px; /* Añade un margen entre los botones */
+}
+
+.boton-container input[type="button"]:hover {
+    background-color:  var(--secundario) ; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.vertical-center {
+    min-height: 100vh; /* Establece una altura mínima del 100% del viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido en el eje Y */
+    align-items: center; /* Centra horizontalmente el contenido en el eje X */
+}
+
+.texto-encima {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 10px;
+}
+
+.boton-container a {
+    text-decoration: none;
+}
+
+.boton-container input[type="button"] {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color:  var(--secundario) ;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.botonhome {
+    font-size: 12px;
+    background-color:  var(--secundario) ;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botonhome:hover{
+    color: var(--secundario);
+    background-color:white;
+}
+
+.formhome{
+    font-size: 12px;
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--secundario) ;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px; 
+}
+
+/* Añade este estilo para la sección de tasaciones */
+.sectiontasaciones {
+    background-color: var(--principal) ;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    text-align: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
+}
+
+/* Establece un margen inferior entre los elementos del contenedor principal */
+.content-tasaciones {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-areas: 
+    "p-imagen p-texto";
+}
+
+/* Establece un margen derecho para la imagen */
+.imgtasaciones {
+    width: 300px;
+    border-radius: 6px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    grid-area: p-imagen;
+}
+
+.text-container {
+    flex: 1; /* Hace que el texto y el botón ocupen todo el espacio disponible en el contenedor */
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    justify-content: center; /* Centra verticalmente el texto y el botón */
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: p-texto;
+    align-self: normal;
+    text-align: left;
+}
+
+/* Establece un margen inferior entre los elementos de texto y el botón */
+.h2tasaciones, .ptasaciones, .botonhome {
+    margin-bottom: 10px;
+}
+
+
+/* Añade estos estilos para los contenedores de la imagen y el texto en la sección de tasaciones */
+.img-container {
+    flex: 1; /* Hace que la imagen ocupe todo el espacio disponible en el contenedor */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+}
+
+
+
+/* Establece un margen inferior entre los elementos de texto y el botón */
+.h2tasaciones, .ptasaciones, .botonhome {
+    margin-bottom: 10px;
+}
+
+/* Divide el párrafo en dos renglones */
+.ptasaciones {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden; /* Oculta el exceso de texto */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+}
+
+.ptasaciones::after {
+    content: '\A'; /* Agrega un salto de línea */
+    white-space: pre; /* Añade un espacio en blanco */
+    display: block; /* Muestra el contenido en un bloque separado */
+}
+
+.mapaalq{
+    vertical-align: auto;
+    justify-content: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 2%;
+}
+
+.divsectioncontacto{
+    grid-area: p-texto;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: center;
+    text-align: left;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.c1{
+    display: grid;
+    grid-template-areas: 
+    "p-imagen1 p-div p-imagen2"
+    "p-texto1 p-div p-texto2";
+}
+
+.sectioncontacto1{
+    grid-area: p-texto1;
+    margin-right: 2%;
+}
+.sectioncontacto2{
+    grid-area: p-texto2;
+    margin-left: 2%;
+}
+
+.imgcontacto{
+    grid-area: p-imagen1;
+justify-self: center;
+}
+
+.imgcontacto2{
+    grid-area: p-imagen2;
+    justify-self: center;
+}
+
+.h2contact{
+    text-align: center;
+}
+
+.pcontact{
+    text-align: center;
+}
+
+.linea-divisoria {
+    width: 3px; /* Ancho de la línea */
+    background-color: var(--principal); /* Color de la línea (puedes cambiarlo) */
+    position: absolute; /* Posición absoluta para superponerla */
+    left: 50%; /* Colocarla en el centro vertical */
+    top: 50%; /* Inicio desde la parte superior */
+    bottom: 0; /* Termina en la parte inferior */
+
+    grid-area: p-imagen2;
+}
+
+.pagination{
+    justify-content: center;
+}
