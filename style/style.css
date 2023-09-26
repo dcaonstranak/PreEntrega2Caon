@@ -503,15 +503,66 @@ justify-self: center;
 
 .linea-divisoria {
     width: 3px; 
-    background-color: var(--principal); /
+    background-color: var(--principal);
     position: absolute; 
     left: 50%; 
     top: 50%; 
     bottom: 0; 
-
     grid-area: p-imagen2;
 }
 
 .pagination{
     justify-content: center;
 }
+
+.c1b {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.c1b label {
+    font-weight: bold;
+}
+
+.c1b input[type="text"],
+.c1b input[type="tel"],
+.c1b input[type="email"],
+.c1b textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.checkbox-label {
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox-label input[type="checkbox"] {
+    float: left; 
+    margin-right: 10px;
+}
+
+.c1b input[type="submit"] {
+    background-color: var(--secundario);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.c1b input[type="url"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
