@@ -497,9 +497,6 @@ justify-self: center;
     text-align: center;
 }
 
-.pcontact{
-    text-align: center;
-}
 
 .linea-divisoria {
     width: 3px; 
@@ -555,6 +552,7 @@ justify-self: center;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    display: block;
 }
 
 
@@ -566,3 +564,13 @@ justify-self: center;
     border-radius: 5px;
 }
 
+.pcontact{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pcontact2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
