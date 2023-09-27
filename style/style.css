@@ -6,25 +6,33 @@
     --prop-2: rgb(193, 214, 226);
 }
 
+@media only screen and (max-width: 500px) {
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {    
+}
+
+@media only screen and (min-width: 961px){   
+}
+
 .navbar{
     background-color: var(--bg-claro);
     font-weight: bold;
 }
 
+nav {
+    flex-grow: 1;
+    margin-right: auto;
+}
 
 header{
     background-color:var(--bg-claro) ;
     background-size: auto;
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
-  padding: 10px;
-}
-
-nav {
-    flex-grow: 1;
-    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+     height: 100px;
+    padding: 10px;
 }
 
 .logoheader{
@@ -46,25 +54,26 @@ header ul {
 header li {
     margin-right: 50px;
 
-  }
+}
 
- header a {
+header a {
     text-decoration: none;
     color: var(--principal);
     font-family: Arial, Helvetica, sans-serif; 
     font-size: 21px; 
     font-weight: bold;
-  }
+}
 
-  header li:last-child {
+header li:last-child {
     margin-right: 0;
-  }
+}
 
 .imgbuscador{
     background-size:contain;
     max-width: 100%;
     height: auto; 
 }
+
 .contenedor{
     position: relative;
     display: inline-block;
@@ -74,22 +83,18 @@ header li {
     justify-items: center;
     align-items: center;
 }
+
 .texto-encima{
     position: absolute;
     top: 10px;
     left: 10px;
     justify-content:center;
     justify-items: center;
-     text-align: center; 
+    text-align: center; 
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     }
-
-
-footer{
-    background-color: var(--bg-claro) ;
-}
 
 footer ul {
     list-style-type: none;
@@ -99,6 +104,10 @@ footer ul {
     padding: 0;
     margin-top: 40px;
     margin-bottom: 40px; 
+}
+
+footer{
+    background-color: var(--bg-claro) ;
 }
 
 footer li {
@@ -124,6 +133,7 @@ h1{
     color: var(--principal);
     text-align: center;
 }
+
 h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
@@ -132,6 +142,7 @@ h2{
     text-decoration:none;
     color: var(--principal);
 }
+
 h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
@@ -140,7 +151,6 @@ h3{
     text-decoration:none;
     color: var(--principal);
 }
-
 
 .h2tasaciones{
     font-family: Arial, Helvetica, sans-serif;
@@ -151,7 +161,7 @@ h3{
     color:white;
 }
 
-.h1header{
+.h1header {
     text-align: center;
     color: var(--principal);
     font-family: Arial, Helvetica, sans-serif;
@@ -159,22 +169,23 @@ h3{
     font-style:normal;
     font-weight:bold;
     text-decoration:none;
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-
-.h1nosotros{
+.h1nosotros {
     text-align: left;  
     color: var(--principal);
     font-weight: bold;
 }
 
-.h1contacto, .h1prop{
+.h1contacto, .h1prop {
     color: var(--principal);
     font-weight: bold;
     margin-top: 2%;
 }
 
-.h2nosotros, .h2prop, .h2contact{
+.h2nosotros, .h2prop, .h2contact {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-style:normal;
@@ -183,7 +194,11 @@ h3{
     color: var(--secundario);
 }
 
-.h3nosotros, .h3prop{
+.h2contact{
+    text-align: center;
+}
+
+.h3nosotros, .h3prop {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     font-style:normal;
@@ -192,14 +207,14 @@ h3{
     color: var(--secundario);
 }
 
-.ulnosotros{
+.ulnosotros {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     font-style:normal;
     text-decoration:none;
 }
 
-.pnosotros{
+.pnosotros {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-style:normal;
@@ -214,23 +229,34 @@ p{
     text-decoration:none;
     text-align:start;
 }
-.ptasaciones{
+
+.ptasaciones {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    font-style:italic;
-    font-weight:lighter;
-    text-decoration:none;
-    text-align:start;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: none;
+    text-align: left;
     color: white;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
-.imgtasaciones{
+.ptasaciones::after {
+    content: '\A'; 
+    white-space: pre; 
+    display: block; 
+}
+
+.imgtasaciones {
     width: 300px;
     border-radius: 6px;
+    margin-right: 20px; 
+    grid-area: p-imagen;
 }
 
-
-.imgnosotros{
+.imgnosotros {
     width: 600px;
     grid-area: p-imagen;
     margin-right: 30px; 
@@ -239,12 +265,7 @@ p{
     margin-left: 2%;
 }
 
-.imgpropiedad{
-    width: 400px;
-    border-radius: 6px;
-}
-
-.sectionprop1{
+.sectionprop1 {
     background-color: var(--prop-1) ;
     display: grid;
     grid-template-areas: 
@@ -252,7 +273,7 @@ p{
     margin: 2%;
     padding: 1%;
 }
-.sectionprop2{
+.sectionprop2 {
     background-color:var(--prop-2) ;
     display: grid;
     grid-template-areas: 
@@ -266,6 +287,8 @@ p{
     margin-right: 10px; 
     margin-bottom: 20px;
     margin-left: 10px;
+    width: 400px;
+    border-radius: 6px;
 }
 
 .divsectionprop {
@@ -283,8 +306,6 @@ p{
     border-radius: 6px;
 align-self: center;
 }
-
-
 
 .boton-container {
     display: flex; 
@@ -319,29 +340,6 @@ align-self: center;
     align-items: center; 
 }
 
-
-
-.boton-container {
-    display: flex;
-    justify-content: center; 
-    margin-top: 10px;
-}
-
-.boton-container a {
-    text-decoration: none;
-}
-
-.boton-container input[type="button"] {
-    font-size: 18px;
-    padding: 10px 20px;
-    background-color:  var(--secundario) ;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin: 0 10px;
-}
-
 .botonhome {
     font-size: 12px;
     background-color:  var(--secundario) ;
@@ -368,7 +366,6 @@ align-self: center;
     border-radius: 6px; 
 }
 
-
 .sectiontasaciones {
     background-color: var(--principal) ;
     border-radius: 12px;
@@ -387,14 +384,6 @@ align-self: center;
     "p-imagen p-texto";
 }
 
-
-.imgtasaciones {
-    width: 300px;
-    border-radius: 6px;
-    margin-right: 20px; 
-    grid-area: p-imagen;
-}
-
 .text-container {
     flex: 1; 
     display: flex;
@@ -407,12 +396,9 @@ align-self: center;
     text-align: left;
 }
 
-
 .h2tasaciones, .ptasaciones, .botonhome {
     margin-bottom: 10px;
 }
-
-
 
 .img-container {
     flex: 1; 
@@ -421,31 +407,8 @@ align-self: center;
     align-items: center; 
 }
 
-
-
-
 .h2tasaciones, .ptasaciones, .botonhome {
     margin-bottom: 10px;
-}
-
-
-.ptasaciones {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: lighter;
-    text-decoration: none;
-    text-align: left;
-    color: white;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-}
-
-.ptasaciones::after {
-    content: '\A'; 
-    white-space: pre; 
-    display: block; 
 }
 
 .mapaalq{
@@ -494,11 +457,6 @@ justify-self: center;
     grid-area: p-imagen2;
     justify-self: center;
 }
-
-.h2contact{
-    text-align: center;
-}
-
 
 .linea-divisoria {
     width: 3px; 
@@ -577,22 +535,9 @@ justify-self: center;
     font-weight: bold;
 }
 
-@media only screen and (max-width: 500px) {
-
-}
-
-@media only screen and (min-width: 501px) and (max-width: 960px) {
-    
-}
-
-@media only screen and (min-width: 961px){
-    
-}
-
 .text-center{
     margin: 2%;
 }
-
 
 .buscador-section {
     position: relative;
@@ -604,12 +549,6 @@ justify-self: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.h1header {
-    font-size: 24px;
-    margin-bottom: 10px;
 }
 
 .formhome,
